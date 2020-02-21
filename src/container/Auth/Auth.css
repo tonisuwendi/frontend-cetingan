@@ -1,0 +1,122 @@
+div.login-container {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+div.login-container div.form {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+div.login-container div.form div.main {
+  position: absolute;
+  right: 0;
+  margin-top: 80px;
+  width: 470px;
+}
+
+div.login-container div.form div.main h2.big-title {
+  font-family: "Rubik";
+  font-size: 28px;
+  line-height: 35px;
+  position: relative;
+}
+
+div.login-container div.form div.main p {
+  color: #666666;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  width: 400px;
+}
+
+div.login-container div.form div.main form {
+  margin-top: 30px;
+}
+
+div.login-container div.form div.main form p {
+  font-family: "Noto Sans";
+  font-size: 14px;
+}
+
+div.login-container div.form div.main form p a {
+  color: darkcyan;
+  font-weight: bold;
+}
+
+div.login-container div.form div.main form p a:hover {
+  text-decoration: underline;
+}
+
+div.login-container div.form div.main input {
+  background-color: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  font-family: "Montserrat";
+  height: 40px;
+  outline: none;
+  padding: 0 15px;
+  margin: 15px 0;
+  transition: 0.2s;
+  width: 300px;
+}
+
+div.login-container div.form div.main input:focus {
+  background-color: white;
+  border: 1px solid darkcyan;
+}
+
+div.login-container div.form div.main button {
+  background-color: darkcyan;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 11px 30px;
+  transition: 0.2s;
+}
+
+div.login-container div.form div.main button:hover {
+  background-color: rgb(0, 112, 112);
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.login-container div.form div.main small {
+  color: #888888;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+
+div.login-container div.form div.main small:hover {
+  text-decoration: underline;
+}
+
+div.login-container div.img {
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+div.login-container div.img div.main {
+  margin-top: 100px;
+  position: relative;
+}
+
+div.login-container div.img div.main img {
+  left: -50px;
+  position: absolute;
+  width: 600px;
+}
