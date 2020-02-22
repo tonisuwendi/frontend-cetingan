@@ -15,3 +15,14 @@ div.overlay {
   transition: 0.5s;
   z-index: 100;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 5px;
+}

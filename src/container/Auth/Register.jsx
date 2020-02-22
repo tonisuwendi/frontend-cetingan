@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "./Auth.css";
 import axios from "axios";
 
@@ -48,6 +48,7 @@ class Register extends Component {
   };
 
   render() {
+    if (this.props.isLoggedIn) return <Redirect push to="/" />;
     return (
       <Fragment>
         {this.state.successRegis ? (

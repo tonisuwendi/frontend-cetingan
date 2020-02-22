@@ -1,0 +1,119 @@
+div.chat-list-wrapper {
+  background-color: white;
+  border-right: 1px solid #dddddd;
+  box-sizing: border-box;
+  float: left;
+  height: 100vh;
+  position: relative;
+  width: 350px;
+}
+
+div.chat-list-wrapper div.navbar {
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 115px;
+  padding: 15px;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.navbar div.avatar {
+  border-radius: 50%;
+  float: left;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+  width: 40px;
+}
+
+div.chat-list-wrapper div.navbar div.avatar img {
+  position: absolute;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.navbar h2.name {
+  font-family: "Noto Sans";
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+div.chat-list-wrapper div.navbar form {
+  position: relative;
+}
+
+div.chat-list-wrapper div.navbar i {
+  color: #555555;
+  font-size: 15px;
+  margin-left: 15px;
+  position: absolute;
+  top: 28px;
+}
+
+div.chat-list-wrapper div.navbar input {
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+  font-size: 15px;
+  height: 40px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 20px;
+  padding-left: 35px;
+  transition: 0.2s;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.navbar input:focus {
+  border: 1px solid darkcyan;
+}
+
+div.chat-list-wrapper div.main {
+  height: calc(100vh - 100px);
+  overflow-x: scroll;
+}
+
+div.chat-list-wrapper div.main div.search {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.main div.search div.list {
+  background-color: #eeeeee;
+  height: 50px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.main div.search div.list div.avatar {
+  border-radius: 50%;
+  float: left;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 35px;
+}
+
+div.chat-list-wrapper div.main div.search div.list div.avatar img {
+  position: absolute;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.main div.search div.list div.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+div.chat-list-wrapper div.main div.search div.list h2.name {
+  font-size: 20px;
+}
+
+div.chat-list-wrapper div.main div.chat {
+  height: 1000px;
+}
