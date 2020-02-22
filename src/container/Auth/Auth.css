@@ -1,3 +1,50 @@
+div.alert-success {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: auto;
+  left: 50%;
+  padding: 25px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  transition: 0.5s;
+  z-index: 101;
+}
+
+div.alert-success h2 {
+  color: #222222;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 23px;
+}
+
+div.alert-success p {
+  color: #444444;
+  font-family: "Yantramanav";
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+div.alert-success a {
+  background-color: darkcyan;
+  border-radius: 2px;
+  color: white;
+  font-family: "Noto Sans";
+  font-size: 13px;
+  padding: 6px 12px;
+  transition: 0.2s;
+}
+
+div.alert-success a:hover {
+  background-color: #555555;
+}
+
 div.login-container {
   height: auto;
   position: relative;
@@ -35,8 +82,20 @@ div.login-container div.form div.main p {
   width: 400px;
 }
 
+div.login-container div.form div.main div.error p {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #721c24;
+  font-family: "Rubik";
+  font-size: 15.5px;
+  padding: 9px 15px;
+  width: 300px;
+}
+
 div.login-container div.form div.main form {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 div.login-container div.form div.main form p {

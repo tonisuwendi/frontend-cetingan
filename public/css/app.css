@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
+}
+
+div.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 100;
 }

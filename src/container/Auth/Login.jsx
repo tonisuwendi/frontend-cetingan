@@ -28,7 +28,7 @@ class Login extends Component {
                   placeholder="Kata Sandi"
                 />
                 <button>Masuk</button>
-                <Link to="">
+                <Link to="#">
                   <small>Lupa kata sandi?</small>
                 </Link>
               </form>
