@@ -6,14 +6,14 @@ const axiosReq = axios.create();
 const AuthContext = React.createContext();
 
 axiosReq.interceptors.request.use(config => {
-  const token = localStorage.getItem("token");
+  const token = sessionStorage.getItem("token");
   config.headers.Authorization = token;
   return config;
 });
 
 export class AuthContextProvider extends Component {
   state = {
-    token: localStorage.getItem("token") || "",
+    token: sessionStorage.getItem("token") || "",
     isLoggedIn: false,
     resLogin: {},
     btnText: "Masuk",
@@ -35,7 +35,7 @@ export class AuthContextProvider extends Component {
         this.setState({
           isLoggedIn: false
         });
-        localStorage.removeItem("token");
+        sessionStorage.removeItem("token");
       }
     });
   };
@@ -54,7 +54,7 @@ export class AuthContextProvider extends Component {
           });
         } else {
           const { token } = res.data;
-          localStorage.setItem("token", token);
+          sessionStorage.setItem("token", token);
           this.setState({
             token: token,
             isLoggedIn: true,

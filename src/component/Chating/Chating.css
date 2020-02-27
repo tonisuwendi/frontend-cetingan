@@ -1,0 +1,122 @@
+div.chating-wrapper {
+  background-color: #f5f5ff;
+  border-right: 1px solid #dddddd;
+  box-sizing: border-box;
+  float: right;
+  height: 100vh;
+  position: relative;
+  width: calc(100% - 350px);
+}
+
+div.chating-wrapper div.top-profile {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  width: calc(100% - 350px);
+}
+
+div.chating-wrapper div.top-profile div.avatar {
+  border-radius: 50%;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 40px;
+}
+
+div.chating-wrapper div.top-profile div.avatar img {
+  position: absolute;
+  width: 100%;
+}
+
+div.chating-wrapper div.top-profile div.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+div.chating-wrapper div.top-profile div.text p.name {
+  font-family: "Rubik";
+  font-size: 18px;
+}
+
+div.chating-wrapper div.chat {
+  height: calc(100vh - 104px);
+  margin-top: 60px;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+div.chating-wrapper div.chat div.main {
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.chating-wrapper div.chat div.main div.list {
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.speech-bubble {
+  display: inline-block;
+  position: relative;
+  margin: 2px 0;
+}
+
+.speech-bubble-me {
+  right: 0;
+  float: right;
+}
+
+.speech-bubble > span {
+  background: #dcf8c6;
+  border-radius: 0.4em;
+  display: inline-block;
+  padding: 10px;
+  font-family: "Raleway";
+  z-index: 1;
+}
+
+.speech-bubble::after {
+  background-color: #ffffff;
+  border-radius: 0 0 50% 0;
+  border-right: 0;
+  bottom: 14px;
+  content: "";
+  height: 30px;
+  margin-top: -5px;
+  margin-right: -5px;
+  position: absolute;
+  right: -21px;
+  transform: rotate(10deg);
+  width: 30px;
+  z-index: -1;
+}
+
+.speech-bubble::before {
+  background-color: #dcf8c6;
+  border-radius: 50%;
+  border-right: 0;
+  bottom: 7px;
+  content: "";
+  height: 30px;
+  margin-top: -5px;
+  margin-right: -5px;
+  position: absolute;
+  right: -11px;
+  transform: rotate(20deg);
+  width: 30px;
+  z-index: -1;
+}

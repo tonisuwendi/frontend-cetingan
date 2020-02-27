@@ -26,3 +26,7 @@ div.overlay {
   background: #aaaaaa;
   border-radius: 5px;
 }
+
+div.clearfix {
+  clear: both;
+}

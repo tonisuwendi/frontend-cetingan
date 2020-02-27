@@ -19,7 +19,7 @@ class Login extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    localStorage.removeItem("token");
+    sessionStorage.removeItem("token");
     this.props.login(this.state);
   };
 

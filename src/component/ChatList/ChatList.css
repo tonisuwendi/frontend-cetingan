@@ -37,6 +37,13 @@ div.chat-list-wrapper div.navbar h2.name {
   margin-top: 7px;
 }
 
+div.chat-list-wrapper div.navbar .fa-sign-out-alt {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  z-index: 100;
+}
+
 div.chat-list-wrapper div.navbar form {
   position: relative;
 }
@@ -74,28 +81,86 @@ div.chat-list-wrapper div.main {
   overflow-x: scroll;
 }
 
+div.chat-list-wrapper div.main div.contact a {
+  color: #333333;
+}
+
+div.chat-list-wrapper div.main div.contact div.list {
+  box-sizing: border-box;
+  height: 65px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.main div.contact div.list:hover {
+  background-color: #f5f5f5;
+}
+
+div.chat-list-wrapper div.main div.contact div.list div.avatar {
+  border-radius: 50%;
+  float: left;
+  height: 45px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 45px;
+}
+
+div.chat-list-wrapper div.main div.contact div.list div.avatar img {
+  position: absolute;
+  width: 100%;
+}
+
+div.chat-list-wrapper div.main div.contact div.list div.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+div.chat-list-wrapper div.main div.contact div.list div.text p.name {
+  font-family: "Rubik";
+  font-size: 17px;
+}
+
+div.chat-list-wrapper div.main div.contact div.list div.text p.chat {
+  color: #777777;
+  font-family: "Noto Sans";
+  font-size: 13px;
+}
+
 div.chat-list-wrapper div.main div.search {
   height: auto;
   position: relative;
   width: 100%;
 }
 
+div.chat-list-wrapper div.main div.search a {
+  color: #555555;
+}
+
 div.chat-list-wrapper div.main div.search div.list {
-  background-color: #eeeeee;
   height: 50px;
   padding: 0 10px;
   width: 100%;
 }
 
+div.chat-list-wrapper div.main div.search div.list:hover {
+  background-color: #eeeeee;
+}
+
 div.chat-list-wrapper div.main div.search div.list div.avatar {
   border-radius: 50%;
   float: left;
-  height: 35px;
+  height: 30px;
+  margin-right: 5px;
   overflow: hidden;
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
-  width: 35px;
+  width: 30px;
 }
 
 div.chat-list-wrapper div.main div.search div.list div.avatar img {
@@ -111,7 +176,8 @@ div.chat-list-wrapper div.main div.search div.list div.name {
 }
 
 div.chat-list-wrapper div.main div.search div.list h2.name {
-  font-size: 20px;
+  font-family: "Montserrat";
+  font-size: 18px;
 }
 
 div.chat-list-wrapper div.main div.chat {

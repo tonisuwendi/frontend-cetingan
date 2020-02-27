@@ -1,0 +1,43 @@
+div.welcome-chat-wrapper {
+  background-color: #f5f5ff;
+  border-right: 1px solid #dddddd;
+  box-sizing: border-box;
+  float: right;
+  height: 100vh;
+  position: relative;
+  width: calc(100% - 350px);
+}
+
+div.welcome-chat-wrapper div.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+div.welcome-chat-wrapper div.welcome img {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: 300px;
+}
+
+div.welcome-chat-wrapper div.welcome h2 {
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+div.welcome-chat-wrapper div.welcome p {
+  color: #555555;
+  font-family: "Raleway";
+  font-size: 15px;
+  left: 50%;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  transform: translate(-50%, 0);
+  width: 600px;
+}
