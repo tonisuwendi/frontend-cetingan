@@ -12,7 +12,7 @@ class ChatList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/api/wechat", {
+      .get("https://mysterious-reaches-64304.herokuapp.com/api/wechat", {
         headers: {
           Authorization: localStorage.getItem("token")
         }
@@ -32,11 +32,14 @@ class ChatList extends Component {
       });
     } else {
       axios
-        .get("http://localhost:5000/api/search/" + value, {
-          headers: {
-            Authorization: localStorage.getItem("token")
+        .get(
+          "https://mysterious-reaches-64304.herokuapp.com/api/search/" + value,
+          {
+            headers: {
+              Authorization: localStorage.getItem("token")
+            }
           }
-        })
+        )
         .then(res => {
           this.setState({
             search: res.data

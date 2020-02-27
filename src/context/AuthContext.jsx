@@ -25,19 +25,21 @@ export class AuthContextProvider extends Component {
   }
 
   initUser = () => {
-    return axiosReq.get("http://localhost:5000/api/profile").then(res => {
-      if (res.status === 200) {
-        this.setState({
-          isLoggedIn: true,
-          user: res.data
-        });
-      } else {
-        this.setState({
-          isLoggedIn: false
-        });
-        sessionStorage.removeItem("token");
-      }
-    });
+    return axiosReq
+      .get("https://mysterious-reaches-64304.herokuapp.com/api/profile")
+      .then(res => {
+        if (res.status === 200) {
+          this.setState({
+            isLoggedIn: true,
+            user: res.data
+          });
+        } else {
+          this.setState({
+            isLoggedIn: false
+          });
+          sessionStorage.removeItem("token");
+        }
+      });
   };
 
   login = credentials => {
@@ -45,7 +47,10 @@ export class AuthContextProvider extends Component {
       btnText: "Loading..."
     });
     return axiosReq
-      .post("http://localhost:5000/api/login", credentials)
+      .post(
+        "https://mysterious-reaches-64304.herokuapp.com/api/login",
+        credentials
+      )
       .then(res => {
         if (res.data.success == false) {
           this.setState({

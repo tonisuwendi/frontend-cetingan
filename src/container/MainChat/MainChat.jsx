@@ -24,11 +24,14 @@ class MainChat extends Component {
       user: []
     });
     const username = this.props.match.params.username;
-    Axios.get("http://localhost:5000/api/" + username, {
-      headers: {
-        Authorization: sessionStorage.getItem("token")
+    Axios.get(
+      "https://mysterious-reaches-64304.herokuapp.com/api/" + username,
+      {
+        headers: {
+          Authorization: sessionStorage.getItem("token")
+        }
       }
-    }).then(res => {
+    ).then(res => {
       this.setState({
         user: res.data
       });
@@ -38,7 +41,7 @@ class MainChat extends Component {
   };
 
   myProfile = () => {
-    Axios.get("http://localhost:5000/api/profile", {
+    Axios.get("https://mysterious-reaches-64304.herokuapp.com/api/profile", {
       headers: {
         Authorization: sessionStorage.getItem("token")
       }
@@ -50,11 +53,15 @@ class MainChat extends Component {
   };
 
   getChat = res => {
-    Axios.get("http://localhost:5000/api/message/" + res.data.id, {
-      headers: {
-        Authorization: sessionStorage.getItem("token")
+    Axios.get(
+      "https://mysterious-reaches-64304.herokuapp.com/api/message/" +
+        res.data.id,
+      {
+        headers: {
+          Authorization: sessionStorage.getItem("token")
+        }
       }
-    }).then(res => {
+    ).then(res => {
       this.setState({
         chat: res.data
       });
@@ -79,9 +86,13 @@ class MainChat extends Component {
       };
       console.log(this.state.message);
       document.getElementById("input").value = "";
-      Axios.post("http://localhost:5000/api/send", data, {
-        headers: headers
-      }).then(res => {
+      Axios.post(
+        "https://mysterious-reaches-64304.herokuapp.com/api/send",
+        data,
+        {
+          headers: headers
+        }
+      ).then(res => {
         this.setState({
           message: ""
         });
