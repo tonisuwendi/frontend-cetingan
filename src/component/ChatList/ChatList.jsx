@@ -14,7 +14,7 @@ class ChatList extends Component {
     axios
       .get("http://localhost:9000/api/wechat", {
         headers: {
-          Authorization: localStorage.getItem("token")
+          Authorization: sessionStorage.getItem("token")
         }
       })
       .then(res => {
@@ -34,7 +34,7 @@ class ChatList extends Component {
       axios
         .get("http://localhost:9000/api/search/" + value, {
           headers: {
-            Authorization: localStorage.getItem("token")
+            Authorization: sessionStorage.getItem("token")
           }
         })
         .then(res => {
