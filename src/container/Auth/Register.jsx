@@ -26,7 +26,7 @@ class Register extends Component {
       btnText: "Loading..."
     });
     axios
-      .post("/api/register", {
+      .post("http://localhost:9000/api/register", {
         name: this.state.name,
         email: this.state.email,
         password: this.state.password
